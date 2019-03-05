@@ -38,7 +38,7 @@ api = Kittn::APIClient.authorize!('meowmeowmeow')
 ```python
 import kittn
 
-api = kittn.authorize('meowmeowmeow')
+api = kittn.authorize('meowmeowmeow!')
 ```
 
 ```shell
