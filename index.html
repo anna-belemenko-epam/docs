@@ -242,6 +242,9 @@
               </ul>
           </li>
           <li>
+            <a href="#alerts" class="toc-h1 toc-link" data-title="Alerts">Alerts</a>
+          </li>
+          <li>
             <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
           </li>
       </ul>
@@ -432,7 +435,51 @@ Remember — a happy kitten is an authenticated kitten!
 <td>The ID of the kitten to delete</td>
 </tr>
 </tbody></table>
-<h1 id='errors'>Errors</h1>
+<h1 id='alerts'>Alerts</h1>
+<p><aside class="notice">
+This section is about working with alerts.</p>
+
+<p><strong>Alert</strong> –  a window with a message that displays on the screen and pauses the execution of the script until the user performs an action.</p>
+
+<p>Here is the list of available methods:</p>
+
+<table><thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Return Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>Ok()</strong></td>
+<td>Accepts an alert</td>
+<td>void</td>
+</tr>
+<tr>
+<td><strong>Cancel()</strong></td>
+<td>Dismisses an alert</td>
+<td>void</td>
+</tr>
+<tr>
+<td><strong>SendKeys()</strong></td>
+<td>Sends key to the alert textbox</td>
+<td>void</td>
+</tr>
+<tr>
+<td><strong>GetText()</strong></td>
+<td>Returns the text displayed in the alert</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p>Action &gt; Examples:</p>
+<pre class="highlight plaintext"><code>[Test]
+public void CancelAlertExample() 
+{
+    MyPage.GetAlert().Cancel();
+}
+
+</code></pre><h1 id='errors'>Errors</h1>
 <aside class="notice">
 This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
 </aside>
