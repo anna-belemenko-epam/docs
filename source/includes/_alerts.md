@@ -17,7 +17,7 @@ Here is the list of available methods:
 
 Action > Examples:
 
-```C#
+```csharp 
 [Test]
 public void CancelAlertExample() 
 {
