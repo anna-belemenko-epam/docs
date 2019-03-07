@@ -30,7 +30,7 @@ This section is about working with alerts.</p>
 </tr>
 <tr>
 <td><strong>GetText()</strong></td>
-<td>Кeturns the text displayed in the alert</td>
+<td>Returns the text displayed in the alert</td>
 <td>string</td>
 </tr>
 </tbody></table>
