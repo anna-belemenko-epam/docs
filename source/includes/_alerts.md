@@ -2,6 +2,7 @@
 
 <aside class="notice">
 This section is about working with alerts.
+</aside>
 
 **Alert** –  a window with a message that displays on the screen and pauses the execution of the script until the user performs an action.
 
