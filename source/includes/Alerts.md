@@ -12,7 +12,7 @@ Here is the list of available methods:
 **Ok()** |Accepts an alert  | void
 **Cancel()** |Dismisses an alert  | void
 **SendKeys()** |Sends key to the alert textbox  | void
-**GetText()** |Кeturns the text displayed in the alert  | string
+**GetText()** |Returns the text displayed in the alert  | string
 
 Action > Examples:
 
