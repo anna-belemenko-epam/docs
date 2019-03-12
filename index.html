@@ -221,10 +221,58 @@
         <ul class="search-results"></ul>
       <ul id="toc" class="toc-list-h1">
           <li>
-            <a href="#alerts" class="toc-h1 toc-link" data-title="Alerts">Alerts</a>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#simple-jdi-examples" class="toc-h2 toc-link" data-title="Simple JDI examples">Simple JDI examples</a>
+                  </li>
+                  <li>
+                    <a href="#start-new-project-with-jdi" class="toc-h2 toc-link" data-title="Start new project with JDI">Start new project with JDI</a>
+                  </li>
+                  <li>
+                    <a href="#how-to-improve-your-selenium-project-with-new-capabilities-in-few-minutes" class="toc-h2 toc-link" data-title="How to improve your Selenium project with new capabilities in few minutes">How to improve your Selenium project with new capabilities in few minutes</a>
+                  </li>
+                  <li>
+                    <a href="#logging-and-reporting" class="toc-h2 toc-link" data-title="Logging and Reporting">Logging and Reporting</a>
+                  </li>
+              </ul>
           </li>
           <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+            <a href="#tutorial" class="toc-h1 toc-link" data-title="Tutorial">Tutorial</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#first-login-test" class="toc-h2 toc-link" data-title="First Login Test">First Login Test</a>
+                  </li>
+                  <li>
+                    <a href="#fill-complex-contact-form" class="toc-h2 toc-link" data-title="Fill complex Contact form">Fill complex Contact form</a>
+                  </li>
+                  <li>
+                    <a href="#create-custom-controls" class="toc-h2 toc-link" data-title="Create Custom controls">Create Custom controls</a>
+                  </li>
+                  <li>
+                    <a href="#jdi-settings-at-glance" class="toc-h2 toc-link" data-title="JDI settings at glance">JDI settings at glance</a>
+                  </li>
+                  <li>
+                    <a href="#test-framework-structure" class="toc-h2 toc-link" data-title="Test Framework structure">Test Framework structure</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#theory" class="toc-h1 toc-link" data-title="Theory">Theory</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#ui-objects-pattern-extend-your-pageobjects-with-ui-elements" class="toc-h2 toc-link" data-title="UI Objects Pattern (Extend your PageObjects with UI elements)">UI Objects Pattern (Extend your PageObjects with UI elements)</a>
+                  </li>
+                  <li>
+                    <a href="#entity-driven-testing" class="toc-h2 toc-link" data-title="Entity Driven Testing">Entity Driven Testing</a>
+                  </li>
+                  <li>
+                    <a href="#smart-locators" class="toc-h2 toc-link" data-title="Smart Locators">Smart Locators</a>
+                  </li>
+                  <li>
+                    <a href="#jdi-locators-simple-as-css-powerful-as-xpath" class="toc-h2 toc-link" data-title="JDI Locators (simple as css powerful as xpath)">JDI Locators (simple as css powerful as xpath)</a>
+                  </li>
+              </ul>
           </li>
       </ul>
         <ul class="toc-footer">
@@ -245,116 +293,7 @@
 <li>Get detailed logs and good reports of all user actions with no effort</li>
 <li>Easy integration with all modern Autoamtion tools: CI (Jenkins, TC etc.), Logging (Log4j or any other slf4j based logs), Reporting (Allure or Report Portal); Browser/Devices farms (Selenium Grid, Browser Stack, Selenoid etc.), Test Runners (TestNG, JUnit) etc.</li>
 </ul>
-<h1 id='alerts'>Alerts</h1>
-<aside class="notice">
-This section is about working with alerts.
-</aside>
-
-<p><strong>Alert</strong> –  a window with a message that displays on the screen and pauses the execution of the script until the user performs an action.</p>
-
-<p>Here is the list of available methods:</p>
-
-<table><thead>
-<tr>
-<th>Method</th>
-<th>Description</th>
-<th>Return Type</th>
-</tr>
-</thead><tbody>
-<tr>
-<td><strong>Ok()</strong></td>
-<td>Accepts an alert</td>
-<td>void</td>
-</tr>
-<tr>
-<td><strong>Cancel()</strong></td>
-<td>Dismisses an alert</td>
-<td>void</td>
-</tr>
-<tr>
-<td><strong>SendKeys()</strong></td>
-<td>Sends key to the alert textbox</td>
-<td>void</td>
-</tr>
-<tr>
-<td><strong>GetText()</strong></td>
-<td>Returns the text displayed in the alert</td>
-<td>string</td>
-</tr>
-</tbody></table>
-
-<p>Action &gt; Examples:</p>
-<pre class="highlight csharp tab-csharp"><code><span class="na">[Test]</span>
-<span class="k">public</span> <span class="k">void</span> <span class="nf">CancelAlertExample</span><span class="p">()</span> 
-<span class="p">{</span>
-    <span class="n">MyPage</span><span class="p">.</span><span class="nf">GetAlert</span><span class="p">().</span><span class="nf">Cancel</span><span class="p">();</span>
-<span class="p">}</span>
-
-<span class="na">[Test]</span>
-<span class="k">public</span> <span class="k">void</span> <span class="nf">GetAlertText</span><span class="p">()</span> 
-<span class="p">{</span>
-    <span class="n">Assert</span><span class="p">.</span><span class="nf">AreEqual</span><span class="p">(</span><span class="n">MyPage</span><span class="p">.</span><span class="nf">GetAlert</span><span class="p">().</span><span class="nf">GetText</span><span class="p">(),</span> <span class="s">"JDI Title"</span><span class="p">);</span>
-<span class="p">}</span>
-
-</code></pre><h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request -- Your request is invalid.</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
-</tr>
-</tbody></table>
-
+<h1 id='introduction'>Introduction</h1><h2 id='simple-jdi-examples'>Simple JDI examples</h2><h2 id='start-new-project-with-jdi'>Start new project with JDI</h2><h2 id='how-to-improve-your-selenium-project-with-new-capabilities-in-few-minutes'>How to improve your Selenium project with new capabilities in few minutes</h2><h2 id='logging-and-reporting'>Logging and Reporting</h2><h1 id='tutorial'>Tutorial</h1><h2 id='first-login-test'>First Login Test</h2><h2 id='fill-complex-contact-form'>Fill complex Contact form</h2><h2 id='create-custom-controls'>Create Custom controls</h2><h2 id='jdi-settings-at-glance'>JDI settings at glance</h2><h2 id='test-framework-structure'>Test Framework structure</h2><h1 id='theory'>Theory</h1><h2 id='ui-objects-pattern-extend-your-pageobjects-with-ui-elements'>UI Objects Pattern (Extend your PageObjects with UI elements)</h2><h2 id='entity-driven-testing'>Entity Driven Testing</h2><h2 id='smart-locators'>Smart Locators</h2><h2 id='jdi-locators-simple-as-css-powerful-as-xpath'>JDI Locators (simple as css powerful as xpath)</h2>
       </div>
       <div class="dark-box">
           <div class="lang-selector">
