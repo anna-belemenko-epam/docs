@@ -24,4 +24,10 @@ public void CancelAlertExample()
     MyPage.GetAlert().Cancel();
 }
 
+[Test]
+public void GetAlertText() 
+{
+    Assert.AreEqual(MyPage.GetAlert().GetText(), "JDI Title");
+}
+
 ```
