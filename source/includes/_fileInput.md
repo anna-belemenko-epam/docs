@@ -16,7 +16,7 @@ Action > Examples:
 
 ```csharp 
 [Test]
-public void CancelAlertExample() 
+public void FileInputTest() 
 {
      TestSite.Html5Page.FileInput.SelectFile(CreateFile(filename));
      var uploadedFile = TestSite.Html5Page.FileInput.GetAttribute("value");
