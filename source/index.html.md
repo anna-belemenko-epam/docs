@@ -19,9 +19,11 @@ includes:
 
 search: true
 ---
+
+# Home
 JDI – is the test Framework for UI test automation that helps to makes your tests fast and sustainable and provide obvious and predictable test run result
 
-## Highlights
+# Highlights
 - Has simple integration with any Selenium based project that allows to increase projects stability, add user actions logs and enrich standard WebElements capabilities with new features in minutes (TBD add Guide)
 - Extends Page Objects pattern with powerful UI Elements: Buttons, TextFields, Forms, Tables etc ( TBD add good links to examples)
 - Write stable and predictable tests that fail only because of changing business logic or layout. No more waits, thread sleep and other flaky staff
