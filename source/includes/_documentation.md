@@ -21,36 +21,47 @@ TBD
 TBD
 
 ## Alerts
+**Alert** –  a window with a message that displays on the screen and pauses the execution of the script until the user performs an action
 <aside class="notice">
-This section is about working with alerts.
+Note that you can make static import in order to simplify code Alerts.acceptAlert() > acceptAlert()
 </aside>
+Handle Window alerts/confirm/prompt dialogs desribed in https://developer.mozilla.org/en-US/docs/Web/API/Window
 
-**Alert** –  a window with a message that displays on the screen and pauses the execution of the script until the user performs an action.
+alert('Alert')
+![GitHub Logo](/images/alert.png)
 
-Here is the list of available methods:
-
-|Method | Description | Return Type
---- | --- | ---
-**Ok()** |Accepts an alert  | void
-**Cancel()** |Dismisses an alert  | void
-**SendKeys()** |Sends key to the alert textbox  | void
-**GetText()** |Returns the text displayed in the alert  | string
-
-Action > Examples:
-
-```csharp 
-[Test]
-public void CancelAlertExample() 
-{
-    MyPage.GetAlert().Cancel();
-}
-
-[Test]
-public void GetAlertText() 
-{
-    Assert.AreEqual(MyPage.GetAlert().GetText(), "JDI Title");
-}
-
+### Methods
+> Accept Alert
+```java 
+alertButton.click();
+acceptAlert();
+```
+confirm()
+![GitHub Logo](/images/confirm.png)
+> Dismiss Alert
+```java 
+alertButton.click();
+dismissAlert();
+```
+> Get Alert Text
+```java 
+alertButton.click();
+String text = getAlertText();
+acceptAlert();
+```
+> Validate Alert text
+```java 
+alertButton.click();
+validateAlert(is("Red button"));
+validateAlert(equalToIgnoringCase("red button"));
+validateAlert(containsString("Red"));
+```
+prompt('Alert', 'Default value')
+![GitHub Logo](/images/prompt.png)
+> Input and accept Alert
+```java 
+alertButton.click();
+inputAndAcceptAlert("Some Text");
 ```
 
 ## Logs
