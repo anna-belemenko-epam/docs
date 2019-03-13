@@ -25,43 +25,64 @@ TBD
 <aside class="notice">
 Note that you can make static import in order to simplify code Alerts.acceptAlert() > acceptAlert()
 </aside>
-Handle Window alerts/confirm/prompt dialogs desribed in https://developer.mozilla.org/en-US/docs/Web/API/Window
+Handle Window alerts/confirm/prompt dialogs desribed on [MDN] https://developer.mozilla.org/en-US/docs/Web/API/Window_
 
 alert('Alert')
 ![GitHub Logo](/images/alert.png)
 
 ### Methods
-> Accept Alert
+#### Accept Alert
+
 ```java 
 alertButton.click();
 acceptAlert();
 ```
+```csharp 
+AlertButton.click();
+AcceptAlert();
+```
 confirm()
 ![GitHub Logo](/images/confirm.png)
 #### Dismiss Alert
+
 ```java 
 alertButton.click();
 dismissAlert();
 ```
+```csharp 
+AlertButton.Click();
+DismissAlert();
+```
 #### Get Alert Text
+
 ```java 
 alertButton.click();
 String text = getAlertText();
 acceptAlert();
 ```
+```csharp 
+AlertButton.Click();
+String text = GetAlertText();
+AcceptAlert();
+```
 #### Validate Alert text
+
 ```java 
 alertButton.click();
 validateAlert(is("Red button"));
 validateAlert(equalToIgnoringCase("red button"));
 validateAlert(containsString("Red"));
 ```
+```csharp 
+TBD
+```
 prompt('Alert', 'Default value')
 ![GitHub Logo](/images/prompt.png)
 #### Input and accept Alert
+
 ```java 
-alertButton.click();
-inputAndAcceptAlert("Some Text");
+AlertButton.Click();
+InputAndAcceptAlert("Some Text");
 ```
 
 ## Logs
