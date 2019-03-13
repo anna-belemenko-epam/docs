@@ -20,8 +20,9 @@ includes:
 search: true
 ---
 
-# Home
+# JDI Framework
 JDI – is the test Framework for UI test automation that helps to makes your tests fast and sustainable and provide obvious and predictable test run result
+JDI powered by Selenium and has simple integration with Seelnium based projects
 
 # Highlights
 - Has simple integration with any Selenium based project that allows to increase projects stability, add user actions logs and enrich standard WebElements capabilities with new features in minutes (TBD add Guide)
@@ -29,4 +30,5 @@ JDI – is the test Framework for UI test automation that helps to makes your te
 - Write stable and predictable tests that fail only because of changing business logic or layout. No more waits, thread sleep and other flaky staff
 - Increase your tests execution speed in general and especially for complex cases like search in big tables, dropdowns with hundreds elements or enter text with thousand lines
 - Get detailed logs and good reports of all user actions with no effort
+- All UI elements has assertions that powered with Hamcrest and wait expected condition during timeout
 - Easy integration with all modern Autoamtion tools: CI (Jenkins, TC etc.), Logging (Log4j or any other slf4j based logs), Reporting (Allure or Report Portal); Browser/Devices farms (Selenium Grid, Browser Stack, Selenoid etc.), Test Runners (TestNG, JUnit) etc.
