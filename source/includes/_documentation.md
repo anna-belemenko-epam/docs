@@ -38,18 +38,18 @@ acceptAlert();
 ```
 confirm()
 ![GitHub Logo](/images/confirm.png)
-> Dismiss Alert
+#### Dismiss Alert
 ```java 
 alertButton.click();
 dismissAlert();
 ```
-> Get Alert Text
+#### Get Alert Text
 ```java 
 alertButton.click();
 String text = getAlertText();
 acceptAlert();
 ```
-> Validate Alert text
+#### Validate Alert text
 ```java 
 alertButton.click();
 validateAlert(is("Red button"));
@@ -58,7 +58,7 @@ validateAlert(containsString("Red"));
 ```
 prompt('Alert', 'Default value')
 ![GitHub Logo](/images/prompt.png)
-> Input and accept Alert
+#### Input and accept Alert
 ```java 
 alertButton.click();
 inputAndAcceptAlert("Some Text");
