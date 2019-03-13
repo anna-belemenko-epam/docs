@@ -27,7 +27,7 @@ TBD
 Note that you can make static import in order to simplify code Alerts.acceptAlert() > acceptAlert()
 </aside>
 
-Handle Window alerts/confirm/prompt dialogs desribed on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+Handle Window alerts/confirm/prompt dialogs desribed on <a href='https://developer.mozilla.org/en-US/docs/Web/API/Window' target="_blank">MDN</a>
 
 ```java 
 alertButton.click();
