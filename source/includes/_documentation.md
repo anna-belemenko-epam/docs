@@ -27,16 +27,17 @@ Note that you can make static import in order to simplify code Alerts.acceptAler
 </aside>
 Handle Window alerts/confirm/prompt dialogs desribed on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 
-alert('Alert')
-![GitHub Logo](/images/alert.png)
 ```java 
 alertButton.click();
 acceptAlert();
 ```
 ```csharp 
-AlertButton.click();
+AlertButton.Click();
 AcceptAlert();
 ```
+
+alert('Alert')
+![GitHub Logo](/images/alert.png)
 
 ```java 
 alertButton.click();
@@ -48,6 +49,7 @@ DismissAlert();
 ```
 confirm()
 ![GitHub Logo](/images/confirm.png)
+
 ```java 
 alertButton.click();
 String text = getAlertText();
@@ -68,6 +70,7 @@ validateAlert(containsString("Red"));
 ```csharp 
 TBD ValidateAlert
 ```
+
 prompt('Alert', 'Default value')
 ![GitHub Logo](/images/prompt.png)
 
