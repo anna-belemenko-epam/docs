@@ -37,6 +37,10 @@ alert('Alert')
 alertButton.click();
 acceptAlert();
 ```
+```csharp 
+AlertButton.click();
+AcceptAlert();
+```
 confirm()
 ![GitHub Logo](/images/confirm.png)
 #### Dismiss Alert
@@ -45,12 +49,21 @@ confirm()
 alertButton.click();
 dismissAlert();
 ```
+```csharp 
+AlertButton.Click();
+DismissAlert();
+```
 #### Get Alert Text
 
 ```java 
 alertButton.click();
 String text = getAlertText();
 acceptAlert();
+```
+```csharp 
+AlertButton.Click();
+String text = GetAlertText();
+AcceptAlert();
 ```
 #### Validate Alert text
 
@@ -60,14 +73,16 @@ validateAlert(is("Red button"));
 validateAlert(equalToIgnoringCase("red button"));
 validateAlert(containsString("Red"));
 ```
-
+```csharp 
+TBD
+```
 prompt('Alert', 'Default value')
 ![GitHub Logo](/images/prompt.png)
 #### Input and accept Alert
 
 ```java 
-alertButton.click();
-inputAndAcceptAlert("Some Text");
+AlertButton.Click();
+InputAndAcceptAlert("Some Text");
 ```
 
 ## Logs
