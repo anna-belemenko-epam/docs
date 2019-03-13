@@ -403,33 +403,22 @@ alertButton.click();
 acceptAlert();
 </code>
 confirm()
-<img src="images/confirm.png" alt="GitHub Logo" />
-Dismiss Alert
-<code>java 
-alertButton.click();
-dismissAlert();
-</code>
-Get Alert Text
-<code>java 
-alertButton.click();
-String text = getAlertText();
-acceptAlert();
-</code>
-Validate Alert text
-<code>java 
-alertButton.click();
-validateAlert(is(&quot;Red button&quot;));
-validateAlert(equalToIgnoringCase(&quot;red button&quot;));
-validateAlert(containsString(&quot;Red&quot;));
-</code>
-prompt(&#39;Alert&#39;, &#39;Default value&#39;)
-<img src="images/prompt.png" alt="GitHub Logo" />
-Input and accept Alert
-<code>java 
-alertButton.click();
-inputAndAcceptAlert(&quot;Some Text&quot;);
-</code></p>
-</blockquote>
+<img src="images/confirm.png" alt="GitHub Logo" /></p>
+<h4 id='dismiss-alert'>Dismiss Alert</h4><pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
+<span class="n">dismissAlert</span><span class="o">();</span>
+</code></pre><h4 id='get-alert-text'>Get Alert Text</h4><pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
+<span class="n">String</span> <span class="n">text</span> <span class="o">=</span> <span class="n">getAlertText</span><span class="o">();</span>
+<span class="n">acceptAlert</span><span class="o">();</span>
+</code></pre><h4 id='validate-alert-text'>Validate Alert text</h4><pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
+<span class="n">validateAlert</span><span class="o">(</span><span class="n">is</span><span class="o">(</span><span class="s">"Red button"</span><span class="o">));</span>
+<span class="n">validateAlert</span><span class="o">(</span><span class="n">equalToIgnoringCase</span><span class="o">(</span><span class="s">"red button"</span><span class="o">));</span>
+<span class="n">validateAlert</span><span class="o">(</span><span class="n">containsString</span><span class="o">(</span><span class="s">"Red"</span><span class="o">));</span>
+</code></pre>
+<p>prompt(&#39;Alert&#39;, &#39;Default value&#39;)
+<img src="images/prompt.png" alt="GitHub Logo" /></p>
+<h4 id='input-and-accept-alert'>Input and accept Alert</h4><pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
+<span class="n">inputAndAcceptAlert</span><span class="o">(</span><span class="s">"Some Text"</span><span class="o">);</span>
+</code></pre></blockquote>
 <h2 id='logs'>Logs</h2>
 <p>TBD</p>
 <h2 id='reports'>Reports</h2><h3 id='allure'>Allure</h3>
