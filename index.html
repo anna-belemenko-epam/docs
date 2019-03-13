@@ -388,30 +388,30 @@ JDI powered by Selenium and has simple integration with Seelnium based projects<
 <p>TBD</p>
 <h2 id='alerts'>Alerts</h2>
 <p><strong>Alert</strong> –  a window with a message that displays on the screen and pauses the execution of the script until the user performs an action</p>
+
+<aside class="notice">
+Note that you can make static import in order to simplify code Alerts.acceptAlert() > acceptAlert()
+</aside>
+
+<p>Handle Window alerts/confirm/prompt dialogs desribed on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">MDN</a></p>
 <pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
 <span class="n">acceptAlert</span><span class="o">();</span>
 </code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">AlertButton</span><span class="p">.</span><span class="nf">Click</span><span class="p">();</span>
 <span class="nf">AcceptAlert</span><span class="p">();</span>
-</code></pre>
-<aside class="notice">
-Note that you can make static import in order to simplify code Alerts.acceptAlert() > acceptAlert()
-</aside>
-<pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
+</code></pre><pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
 <span class="n">dismissAlert</span><span class="o">();</span>
 </code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">AlertButton</span><span class="p">.</span><span class="nf">Click</span><span class="p">();</span>
 <span class="nf">DismissAlert</span><span class="p">();</span>
 </code></pre>
-<p>Handle Window alerts/confirm/prompt dialogs desribed on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">MDN</a></p>
+<p>alert(&#39;Alert&#39;)
+<img src="images/alert.png" alt="GitHub Logo" /></p>
 <pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
 <span class="n">String</span> <span class="n">text</span> <span class="o">=</span> <span class="n">getAlertText</span><span class="o">();</span>
 <span class="n">acceptAlert</span><span class="o">();</span>
 </code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">AlertButton</span><span class="p">.</span><span class="nf">Click</span><span class="p">();</span>
 <span class="n">String</span> <span class="n">text</span> <span class="p">=</span> <span class="nf">GetAlertText</span><span class="p">();</span>
 <span class="nf">AcceptAlert</span><span class="p">();</span>
-</code></pre>
-<p>alert(&#39;Alert&#39;)
-<img src="images/alert.png" alt="GitHub Logo" /></p>
-<pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
+</code></pre><pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
 <span class="n">validateAlert</span><span class="o">(</span><span class="n">is</span><span class="o">(</span><span class="s">"Red button"</span><span class="o">));</span>
 <span class="n">validateAlert</span><span class="o">(</span><span class="n">equalToIgnoringCase</span><span class="o">(</span><span class="s">"red button"</span><span class="o">));</span>
 <span class="n">validateAlert</span><span class="o">(</span><span class="n">containsString</span><span class="o">(</span><span class="s">"Red"</span><span class="o">));</span>
