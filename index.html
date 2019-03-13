@@ -395,31 +395,42 @@ Handle Window alerts/confirm/prompt dialogs desribed on <a href="https://develop
 
 <p>alert(&#39;Alert&#39;)
 <img src="images/alert.png" alt="GitHub Logo" />
-confirm()
-<img src="images/confirm.png" alt="GitHub Logo" />
-prompt(&#39;Alert&#39;, &#39;Default value&#39;)
-<img src="images/prompt.png" alt="GitHub Logo" /></p>
-<h3 id='methods'>Methods</h3><pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
-<span class="n">acceptAlert</span><span class="o">();</span>
-</code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">AlertButton</span><span class="p">.</span><span class="nf">click</span><span class="p">();</span>
-<span class="nf">AcceptAlert</span><span class="p">();</span>
-</code></pre><pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
+<code>java 
+alertButton.click();
+acceptAlert();
+</code>
+<code>csharp 
+AlertButton.click();
+AcceptAlert();
+</code></p>
+<pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
 <span class="n">dismissAlert</span><span class="o">();</span>
 </code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">AlertButton</span><span class="p">.</span><span class="nf">Click</span><span class="p">();</span>
 <span class="nf">DismissAlert</span><span class="p">();</span>
-</code></pre><pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
-<span class="n">String</span> <span class="n">text</span> <span class="o">=</span> <span class="n">getAlertText</span><span class="o">();</span>
-<span class="n">acceptAlert</span><span class="o">();</span>
-</code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">AlertButton</span><span class="p">.</span><span class="nf">Click</span><span class="p">();</span>
-<span class="n">String</span> <span class="n">text</span> <span class="p">=</span> <span class="nf">GetAlertText</span><span class="p">();</span>
-<span class="nf">AcceptAlert</span><span class="p">();</span>
-</code></pre><pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
+</code></pre>
+<p>confirm()
+<img src="images/confirm.png" alt="GitHub Logo" />
+<code>java 
+alertButton.click();
+String text = getAlertText();
+acceptAlert();
+</code>
+<code>csharp 
+AlertButton.Click();
+String text = GetAlertText();
+AcceptAlert();
+</code></p>
+<pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
 <span class="n">validateAlert</span><span class="o">(</span><span class="n">is</span><span class="o">(</span><span class="s">"Red button"</span><span class="o">));</span>
 <span class="n">validateAlert</span><span class="o">(</span><span class="n">equalToIgnoringCase</span><span class="o">(</span><span class="s">"red button"</span><span class="o">));</span>
 <span class="n">validateAlert</span><span class="o">(</span><span class="n">containsString</span><span class="o">(</span><span class="s">"Red"</span><span class="o">));</span>
 </code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">TBD</span> <span class="n">ValidateAlert</span>
-</code></pre><pre class="highlight java tab-java"><code><span class="n">AlertButton</span><span class="o">.</span><span class="na">Click</span><span class="o">();</span>
-<span class="n">InputAndAcceptAlert</span><span class="o">(</span><span class="s">"Some Text"</span><span class="o">);</span>
+</code></pre>
+<p>prompt(&#39;Alert&#39;, &#39;Default value&#39;)
+<img src="images/prompt.png" alt="GitHub Logo" /></p>
+<pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
+<span class="n">inputAndAcceptAlert</span><span class="o">(</span><span class="s">"Some Text"</span><span class="o">);</span>
+</code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">TBD</span> <span class="n">InputAndAcceptAlert</span>
 </code></pre><h2 id='logs'>Logs</h2>
 <p>TBD</p>
 <h2 id='reports'>Reports</h2><h3 id='allure'>Allure</h3>
