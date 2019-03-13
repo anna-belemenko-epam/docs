@@ -23,6 +23,12 @@ TBD
 ## Alerts
 **Alert** –  a window with a message that displays on the screen and pauses the execution of the script until the user performs an action
 
+<aside class="notice">
+Note that you can make static import in order to simplify code Alerts.acceptAlert() > acceptAlert()
+</aside>
+
+Handle Window alerts/confirm/prompt dialogs desribed on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+
 ```java 
 alertButton.click();
 acceptAlert();
@@ -31,11 +37,6 @@ acceptAlert();
 AlertButton.Click();
 AcceptAlert();
 ```
-
-<aside class="notice">
-Note that you can make static import in order to simplify code Alerts.acceptAlert() > acceptAlert()
-</aside>
-
 ```java 
 alertButton.click();
 dismissAlert();
@@ -45,7 +46,8 @@ AlertButton.Click();
 DismissAlert();
 ```
 
-Handle Window alerts/confirm/prompt dialogs desribed on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window)
+alert('Alert')
+![GitHub Logo](/images/alert.png)
 
 ```java 
 alertButton.click();
@@ -57,10 +59,6 @@ AlertButton.Click();
 String text = GetAlertText();
 AcceptAlert();
 ```
-
-alert('Alert')
-![GitHub Logo](/images/alert.png)
-
 ```java 
 alertButton.click();
 validateAlert(is("Red button"));
