@@ -29,10 +29,11 @@ Handle Window alerts/confirm/prompt dialogs desribed on [MDN] https://developer.
 
 alert('Alert')
 ![GitHub Logo](/images/alert.png)
-
+confirm()
+![GitHub Logo](/images/confirm.png)
+prompt('Alert', 'Default value')
+![GitHub Logo](/images/prompt.png)
 ### Methods
-#### Accept Alert
-
 ```java 
 alertButton.click();
 acceptAlert();
@@ -41,9 +42,6 @@ acceptAlert();
 AlertButton.click();
 AcceptAlert();
 ```
-confirm()
-![GitHub Logo](/images/confirm.png)
-#### Dismiss Alert
 
 ```java 
 alertButton.click();
@@ -53,7 +51,6 @@ dismissAlert();
 AlertButton.Click();
 DismissAlert();
 ```
-#### Get Alert Text
 
 ```java 
 alertButton.click();
@@ -65,7 +62,6 @@ AlertButton.Click();
 String text = GetAlertText();
 AcceptAlert();
 ```
-#### Validate Alert text
 
 ```java 
 alertButton.click();
@@ -76,9 +72,6 @@ validateAlert(containsString("Red"));
 ```csharp 
 TBD
 ```
-prompt('Alert', 'Default value')
-![GitHub Logo](/images/prompt.png)
-#### Input and accept Alert
 
 ```java 
 AlertButton.Click();
