@@ -25,13 +25,13 @@ TBD
 <aside class="notice">
 Note that you can make static import in order to simplify code Alerts.acceptAlert() > acceptAlert()
 </aside>
-Handle Window alerts/confirm/prompt dialogs desribed in https://developer.mozilla.org/en-US/docs/Web/API/Window
+Handle Window alerts/confirm/prompt dialogs desribed on [MDN] https://developer.mozilla.org/en-US/docs/Web/API/Window_
 
 alert('Alert')
 ![GitHub Logo](/images/alert.png)
 
 ### Methods
-> Accept Alert
+#### Accept Alert
 ```java 
 alertButton.click();
 acceptAlert();
