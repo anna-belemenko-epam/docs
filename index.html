@@ -387,43 +387,45 @@ JDI powered by Selenium and has simple integration with Seelnium based projects<
 <h2 id='windows-tabs-manager'>Windows/Tabs manager</h2>
 <p>TBD</p>
 <h2 id='alerts'>Alerts</h2>
-<p><strong>Alert</strong> –  a window with a message that displays on the screen and pauses the execution of the script until the user performs an action
-<aside class="notice">
-Note that you can make static import in order to simplify code Alerts.acceptAlert() &gt; acceptAlert()
-</aside>
-Handle Window alerts/confirm/prompt dialogs desribed on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">MDN</a></p>
+<p><strong>Alert</strong> –  a window with a message that displays on the screen and pauses the execution of the script until the user performs an action</p>
 <pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
 <span class="n">acceptAlert</span><span class="o">();</span>
 </code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">AlertButton</span><span class="p">.</span><span class="nf">Click</span><span class="p">();</span>
 <span class="nf">AcceptAlert</span><span class="p">();</span>
 </code></pre>
-<p>alert(&#39;Alert&#39;)
-<img src="images/alert.png" alt="GitHub Logo" /></p>
+<aside class="notice">
+Note that you can make static import in order to simplify code Alerts.acceptAlert() > acceptAlert()
+</aside>
 <pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
 <span class="n">dismissAlert</span><span class="o">();</span>
 </code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">AlertButton</span><span class="p">.</span><span class="nf">Click</span><span class="p">();</span>
 <span class="nf">DismissAlert</span><span class="p">();</span>
 </code></pre>
-<p>confirm()
-<img src="images/confirm.png" alt="GitHub Logo" /></p>
+<p>Handle Window alerts/confirm/prompt dialogs desribed on <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window">MDN</a></p>
 <pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
 <span class="n">String</span> <span class="n">text</span> <span class="o">=</span> <span class="n">getAlertText</span><span class="o">();</span>
 <span class="n">acceptAlert</span><span class="o">();</span>
 </code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">AlertButton</span><span class="p">.</span><span class="nf">Click</span><span class="p">();</span>
 <span class="n">String</span> <span class="n">text</span> <span class="p">=</span> <span class="nf">GetAlertText</span><span class="p">();</span>
 <span class="nf">AcceptAlert</span><span class="p">();</span>
-</code></pre><pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
+</code></pre>
+<p>alert(&#39;Alert&#39;)
+<img src="images/alert.png" alt="GitHub Logo" /></p>
+<pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
 <span class="n">validateAlert</span><span class="o">(</span><span class="n">is</span><span class="o">(</span><span class="s">"Red button"</span><span class="o">));</span>
 <span class="n">validateAlert</span><span class="o">(</span><span class="n">equalToIgnoringCase</span><span class="o">(</span><span class="s">"red button"</span><span class="o">));</span>
 <span class="n">validateAlert</span><span class="o">(</span><span class="n">containsString</span><span class="o">(</span><span class="s">"Red"</span><span class="o">));</span>
 </code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">TBD</span> <span class="n">ValidateAlert</span>
 </code></pre>
-<p>prompt(&#39;Alert&#39;, &#39;Default value&#39;)
-<img src="images/prompt.png" alt="GitHub Logo" /></p>
+<p>confirm()
+<img src="images/confirm.png" alt="GitHub Logo" /></p>
 <pre class="highlight java tab-java"><code><span class="n">alertButton</span><span class="o">.</span><span class="na">click</span><span class="o">();</span>
 <span class="n">inputAndAcceptAlert</span><span class="o">(</span><span class="s">"Some Text"</span><span class="o">);</span>
 </code></pre><pre class="highlight csharp tab-csharp"><code><span class="n">TBD</span> <span class="n">InputAndAcceptAlert</span>
-</code></pre><h2 id='logs'>Logs</h2>
+</code></pre>
+<p>prompt(&#39;Alert&#39;, &#39;Default value&#39;)
+<img src="images/prompt.png" alt="GitHub Logo" /></p>
+<h2 id='logs'>Logs</h2>
 <p>TBD</p>
 <h2 id='reports'>Reports</h2><h3 id='allure'>Allure</h3>
 <p>TBD</p>
