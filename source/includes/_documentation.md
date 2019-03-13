@@ -32,6 +32,7 @@ alert('Alert')
 
 ### Methods
 #### Accept Alert
+
 ```java 
 alertButton.click();
 acceptAlert();
@@ -39,26 +40,31 @@ acceptAlert();
 confirm()
 ![GitHub Logo](/images/confirm.png)
 #### Dismiss Alert
+
 ```java 
 alertButton.click();
 dismissAlert();
 ```
 #### Get Alert Text
+
 ```java 
 alertButton.click();
 String text = getAlertText();
 acceptAlert();
 ```
 #### Validate Alert text
+
 ```java 
 alertButton.click();
 validateAlert(is("Red button"));
 validateAlert(equalToIgnoringCase("red button"));
 validateAlert(containsString("Red"));
 ```
+
 prompt('Alert', 'Default value')
 ![GitHub Logo](/images/prompt.png)
 #### Input and accept Alert
+
 ```java 
 alertButton.click();
 inputAndAcceptAlert("Some Text");
