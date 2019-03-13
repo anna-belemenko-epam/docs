@@ -47,7 +47,7 @@ DismissAlert();
 ```
 
 alert('Alert')
-![GitHub Logo](/images/alert.png)
+![Alert](/images/alert.png)
 
 ```java 
 alertButton.click();
@@ -70,7 +70,7 @@ TBD ValidateAlert
 ```
 
 confirm()
-![GitHub Logo](/images/confirm.png)
+![Confirmation dialog](/images/confirm.png)
 
 ```java 
 alertButton.click();
@@ -81,7 +81,7 @@ TBD InputAndAcceptAlert
 ```
 
 prompt('Alert', 'Default value')
-![GitHub Logo](/images/prompt.png)
+![Prompt dialog](/images/prompt.png)
 
 
 ## Logs
