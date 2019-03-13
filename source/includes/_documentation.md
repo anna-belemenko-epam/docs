@@ -22,10 +22,6 @@ TBD
 
 ## Alerts
 **Alert** –  a window with a message that displays on the screen and pauses the execution of the script until the user performs an action
-<aside class="notice">
-Note that you can make static import in order to simplify code Alerts.acceptAlert() > acceptAlert()
-</aside>
-Handle Window alerts/confirm/prompt dialogs desribed on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 
 ```java 
 alertButton.click();
@@ -36,8 +32,9 @@ AlertButton.Click();
 AcceptAlert();
 ```
 
-alert('Alert')
-![GitHub Logo](/images/alert.png)
+<aside class="notice">
+Note that you can make static import in order to simplify code Alerts.acceptAlert() > acceptAlert()
+</aside>
 
 ```java 
 alertButton.click();
@@ -47,8 +44,8 @@ dismissAlert();
 AlertButton.Click();
 DismissAlert();
 ```
-confirm()
-![GitHub Logo](/images/confirm.png)
+
+Handle Window alerts/confirm/prompt dialogs desribed on [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Window)
 
 ```java 
 alertButton.click();
@@ -61,6 +58,9 @@ String text = GetAlertText();
 AcceptAlert();
 ```
 
+alert('Alert')
+![GitHub Logo](/images/alert.png)
+
 ```java 
 alertButton.click();
 validateAlert(is("Red button"));
@@ -71,8 +71,8 @@ validateAlert(containsString("Red"));
 TBD ValidateAlert
 ```
 
-prompt('Alert', 'Default value')
-![GitHub Logo](/images/prompt.png)
+confirm()
+![GitHub Logo](/images/confirm.png)
 
 ```java 
 alertButton.click();
@@ -81,6 +81,10 @@ inputAndAcceptAlert("Some Text");
 ```csharp 
 TBD InputAndAcceptAlert
 ```
+
+prompt('Alert', 'Default value')
+![GitHub Logo](/images/prompt.png)
+
 
 ## Logs
 TBD
