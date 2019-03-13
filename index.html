@@ -305,6 +305,12 @@
                     <a href="#jdi-locators" class="toc-h2 toc-link" data-title="JDI Locators">JDI Locators</a>
                   </li>
                   <li>
+                    <a href="#windows-tabs-manager" class="toc-h2 toc-link" data-title="Windows/Tabs manager">Windows/Tabs manager</a>
+                  </li>
+                  <li>
+                    <a href="#alerts" class="toc-h2 toc-link" data-title="Alerts">Alerts</a>
+                  </li>
+                  <li>
                     <a href="#logs" class="toc-h2 toc-link" data-title="Logs">Logs</a>
                   </li>
                   <li>
@@ -378,7 +384,60 @@ JDI powered by Selenium and has simple integration with Seelnium based projects<
 <p>TBD</p>
 <h2 id='jdi-locators'>JDI Locators</h2>
 <p>TBD</p>
-<h2 id='logs'>Logs</h2>
+<h2 id='windows-tabs-manager'>Windows/Tabs manager</h2>
+<p>TBD</p>
+<h2 id='alerts'>Alerts</h2>
+<aside class="notice">
+This section is about working with alerts.
+</aside>
+
+<p><strong>Alert</strong> –  a window with a message that displays on the screen and pauses the execution of the script until the user performs an action.</p>
+
+<p>Here is the list of available methods:</p>
+
+<table><thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+<th>Return Type</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><strong>Ok()</strong></td>
+<td>Accepts an alert</td>
+<td>void</td>
+</tr>
+<tr>
+<td><strong>Cancel()</strong></td>
+<td>Dismisses an alert</td>
+<td>void</td>
+</tr>
+<tr>
+<td><strong>SendKeys()</strong></td>
+<td>Sends key to the alert textbox</td>
+<td>void</td>
+</tr>
+<tr>
+<td><strong>GetText()</strong></td>
+<td>Returns the text displayed in the alert</td>
+<td>string</td>
+</tr>
+</tbody></table>
+
+<p>Action &gt; Examples:</p>
+<pre class="highlight csharp tab-csharp"><code><span class="na">[Test]</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">CancelAlertExample</span><span class="p">()</span> 
+<span class="p">{</span>
+    <span class="n">MyPage</span><span class="p">.</span><span class="nf">GetAlert</span><span class="p">().</span><span class="nf">Cancel</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="na">[Test]</span>
+<span class="k">public</span> <span class="k">void</span> <span class="nf">GetAlertText</span><span class="p">()</span> 
+<span class="p">{</span>
+    <span class="n">Assert</span><span class="p">.</span><span class="nf">AreEqual</span><span class="p">(</span><span class="n">MyPage</span><span class="p">.</span><span class="nf">GetAlert</span><span class="p">().</span><span class="nf">GetText</span><span class="p">(),</span> <span class="s">"JDI Title"</span><span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre><h2 id='logs'>Logs</h2>
 <p>TBD</p>
 <h2 id='reports'>Reports</h2><h3 id='allure'>Allure</h3>
 <p>TBD</p>
