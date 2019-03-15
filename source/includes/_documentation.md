@@ -7,16 +7,30 @@ TBD
 
 ## Complex elements
 ### Table
-[Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Complex/TableTests.cs)
+[Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Composite/TableTests.cs)
 ```java 
 TBD
 ```
 ```csharp 
-AlertButton.Click();
-AcceptAlert();
+PerformancePage.UsersTable.AssertThat().HasRowWithValues(
+                ContainsValue("Meyer", InColumn("Name")),
+                ContainsValue("co.uk", InColumn("Email")));
 ```
-
-
+```csharp 
+PerformancePage.UsersTable.AssertThat().HasRowWithValues(
+                ContainsValue("Meyer", InColumn(1)),
+                ContainsValue("co.uk", InColumn(3)));
+```
+```csharp 
+PerformancePage.UsersTable.AssertThat().HasRowWithValues(
+                HasValue("Brian Meyer", InColumn("Name")),
+                HasValue("mollis.nec@seddictumeleifend.co.uk", InColumn("Email")));
+```
+```csharp 
+PerformancePage.UsersTable.AssertThat().HasRowWithValues(
+                HasValue("Brian Meyer", InColumn(1)),
+                HasValue("mollis.nec@seddictumeleifend.co.uk", InColumn(3)));
+```
 ## Composite elements
 TBD
 
