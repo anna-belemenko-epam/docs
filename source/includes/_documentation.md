@@ -15,6 +15,45 @@ TBD
 AlertButton.Click();
 AcceptAlert();
 ```
+### DropDown
+**DropDown** – a graphical control element, that allows the user to choose one value from a list.
+
+Here is the list of some available methods:
+
+|Method | Description | Return Type
+--- | --- | ---
+**Select(string/int)** |Select dropdown by value/index  | void
+**GetSelected()** |Get selected dropdown value  | string
+
+[Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Common/DropDownTests.cs)
+
+Examples in C#:
+```csharp 
+[Test]
+public void SelectDropDownExample() 
+{
+    MyDropDown.Select("some value");
+}
+```
+```csharp 
+[Test]
+public void SelectByIndexExample() 
+{
+    MyDropDown.Select(1);
+}
+```
+```csharp 
+[Test]
+public void GetSelectedExample() 
+{
+    var selected = MyDropDown.GetSelected();
+    Assert.AreEqual(selected, "some value");
+}
+```
+Examples in Java:
+```java 
+TBD
+```
 
 
 ## Composite elements
