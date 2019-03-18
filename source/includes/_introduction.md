@@ -30,7 +30,8 @@ But this is not all, just Run this test in your IDE and what you will get?
 [22:23.727  STEP] : Login as User(userName:epam; password:1234)
 [22:24.516  STEP] : Check that 'Home Page' is opened (url CONTAINS '/index.html'; title EQUALS 'Home Page')
 ```
-Nice! Isn't it?
+**Nice!** Isn't it? :ok_hand:
+
 2. Same log in log file (src/test/.logs/) if you would like to see test execution results remotely (require log4j2.xml in src/test/resources)
 3. Nice Allure report of your test execution! (require Allure settings in pom.xml)
 ![Allure Report](../images/intro/allure-report.png)
@@ -38,6 +39,8 @@ Nice! Isn't it?
 
 Just move allure-results folder in target folder adn run maven > Plugins > allure > allure:serve
 ![Allure Serve](../images/intro/allure-serve.png)
+
+### 2. Organize PageObjects
 
 ## Start new project with JDI
 ## How to improve your Selenium project with new capabilities in few minutes
