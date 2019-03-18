@@ -33,11 +33,11 @@ But this is not all, just Run this test in your IDE and what you will get?
 Nice! Isn't it?
 2. Same log in log file (src/test/.logs/) if you would like to see test execution results remotely (require log4j2.xml in src/test/resources)
 3. Nice Allure report of your test execution! (require Allure settings in pom.xml)
-![Allure Report](images/intro/allure-report.png)
-![Allure Log](images/intro/allure-report-log.png)
+![Allure Report](../images/intro/allure-report.png)
+![Allure Log](../images/intro/allure-report-log.png)
 
 Just move allure-results folder in target folder adn run maven > Plugins > allure > allure:serve
-![Allure Serve](images/intro/allure-serve.png)
+![Allure Serve](../images/intro/allure-serve.png)
 
 ## Start new project with JDI
 ## How to improve your Selenium project with new capabilities in few minutes
