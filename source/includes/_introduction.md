@@ -34,7 +34,7 @@ Nice! Isn't it?
 2. Same log in log file (src/test/.logs/) if you would like to see test execution results remotely (require log4j2.xml in src/test/resources)
 3. Nice Allure report of your test execution! (require Allure settings in pom.xml)
 ![Allure Report](/images/allure-report.png)
-![Allure Log](/images/allure-report-log.pngg)
+![Allure Log](/images/allure-report-log.png)
 
 Just move allure-results folder in target folder adn run maven > Plugins > allure > allure:serve
 ![Allure Serve](/images/allure-serve.png)
