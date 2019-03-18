@@ -168,7 +168,7 @@ DismissAlert();
 ```
 
 alert('Alert')
-![Alert](/images/alert.png)
+![Alert](../images/alert.png)
 
 ```java 
 alertButton.click();
