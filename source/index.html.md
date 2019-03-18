@@ -29,8 +29,8 @@ search: true
 JDI – is powerfull Test Automation Framework that helps to makes your tests fast, sustainable and provide obvious and predictable test run result
 JDI powered by Selenium and has simple integration with Selenium based projects
 <p align="left">
-  <img src="/images/logs.png" alt="Logs">
-  <img src="/images/reports.png" alt="Reports">
+  <img src="/images/intro/allure-report-log.png" alt="Logs">
+  <img src="/images/intro/allure-report.png" alt="Reports">
 </p>
 
 # Highlights
