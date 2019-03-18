@@ -168,6 +168,7 @@ DismissAlert();
 ```
 
 alert('Alert')
+
 ![Alert](../images/alert.png)
 
 ```java 
@@ -191,6 +192,7 @@ TBD ValidateAlert
 ```
 
 confirm()
+
 ![Confirmation dialog](../images/confirm.png)
 
 ```java 
@@ -202,6 +204,7 @@ TBD InputAndAcceptAlert
 ```
 
 prompt('Alert', 'Default value')
+
 ![Prompt dialog](../images/prompt.png)
 
 
