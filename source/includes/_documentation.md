@@ -191,7 +191,7 @@ TBD ValidateAlert
 ```
 
 confirm()
-![Confirmation dialog](/images/confirm.png)
+![Confirmation dialog](../images/confirm.png)
 
 ```java 
 alertButton.click();
@@ -202,7 +202,7 @@ TBD InputAndAcceptAlert
 ```
 
 prompt('Alert', 'Default value')
-![Prompt dialog](/images/prompt.png)
+![Prompt dialog](../images/prompt.png)
 
 
 ## Logs
