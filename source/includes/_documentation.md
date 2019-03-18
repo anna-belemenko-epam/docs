@@ -55,6 +55,79 @@ Examples in Java:
 TBD
 ```
 
+### DataList
+**DataList** – a graphical control element, that allows the user to choose one value from a list or enter it by himself.
+
+Here is the list of some available methods:
+
+|Method | Description | Return Type
+--- | --- | ---
+**Select(string/int)** |Select datalist by value/index  | void
+**Input(string value)** |Input user's value into datalist  | void
+**GetSelected()** |Get selected datalist value  | string
+
+[Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Common/DataListTests.cs)
+
+Examples in C#:
+```csharp 
+[Test]
+public void SelectDataList() 
+{
+    MyDataList.Select("some value");
+}
+```
+```csharp 
+[Test]
+public void SelectByIndex() 
+{
+    MyDataList.Select(1);
+}
+```
+```csharp 
+[Test]
+public void FillDataList() 
+{
+    MyDataList.Input("some value");
+    SubmitButton.Click();
+}
+```
+Examples in Java:
+```java 
+TBD
+```
+
+### MultiSelector
+**MultiSelector** – a graphical control element, that allows the user to do multiple choice.
+
+Here is the list of some available methods:
+
+|Method | Description | Return Type
+--- | --- | ---
+**Select(string[]/int[])** |Select multiselector by values/indexes  | void
+**GetSelected(Array)** |Get selected values  | string[]
+**UnselectAll(Array)** |Unselect all values  | void
+
+[Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Common/MultiSelectorTests.cs)
+
+Examples in C#:
+```csharp 
+[Test]
+public void MultiSelectByValues() 
+{
+    MyMultiSelector.Select(string[]);
+}
+```
+```csharp 
+[Test]
+public void MultiSelectByIndexes() 
+{
+    MyMultiSelector.Select(int[]);
+}
+```
+Examples in Java:
+```java 
+TBD
+```
 
 ## Composite elements
 TBD
