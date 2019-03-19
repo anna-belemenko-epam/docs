@@ -12,6 +12,7 @@ Test Scenario
 * Enter '1234' in password textfield
 * Press 'Enter' button
 3) Validate that HomePage id openned
+
 ```java 
 @Test
 public void loginTest() {
@@ -24,6 +25,7 @@ public void loginTest() {
 So simple!
 But this is not all, just Run this test in your IDE and what you will get?
 1. Detailed log in Console output:
+
 ```
 [22:17.102  STEP] : Open 'Home Page'(url=https://epam.github.io/JDI/index.html)
 [22:23.617  STEP] : Click on 'User Icon'
@@ -43,6 +45,7 @@ Just move allure-results folder in target folder adn run maven > Plugins > allur
 ### 2. UI PageObjects
 So now let's look on PageObjects we have in JDI. In example above for "Login test" we have following PageObjects:
 * Site - entity for your application. Consist of list of Pages you have in application
+
 ```java 
 @JSite("https://epam.github.io/JDI/")
 public class JdiTestSite {
@@ -50,6 +53,7 @@ public class JdiTestSite {
 }
 ```
 * HomePage - Pages collects elements: common, complex and composite. Pages already have meta information about Url and Title and you can execute common actions with this Pages like: open, checkOpenned, get Url/Titile, zoom, scroll, work with cookies etc.
+
 ```java 
 @Url("/index.html") @Title("Home Page")
 public class HomePage extends WebPage {
@@ -58,6 +62,7 @@ public class HomePage extends WebPage {
 }
 ```
 * LoginForm - Forms and Sections are logical parts of pages, they can include other sections or just elements. Forms also have additional actions like fill, submit, check etc.
+
 ```java 
 public class LoginForm extends Form<User> {
     @Css("#name") TextField userName;
