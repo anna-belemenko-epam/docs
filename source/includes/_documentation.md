@@ -7,7 +7,11 @@ TBD
 
 ## Complex elements
 ### Table
+
 [Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Composite/TableTests.cs)
+
+[Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Complex/TableTests.cs)
+
 ```java 
 TBD
 ```
@@ -30,6 +34,105 @@ PerformancePage.UsersTable.AssertThat().HasRowWithValues(
 PerformancePage.UsersTable.AssertThat().HasRowWithValues(
                 HasValue("Brian Meyer", InColumn(1)),
                 HasValue("mollis.nec@seddictumeleifend.co.uk", InColumn(3)));
+```
+### DropDown
+**DropDown** – a graphical control element, that allows the user to choose one value from a list.
+
+Here is the list of some available methods:
+
+|Method | Description | Return Type
+--- | --- | ---
+**Select(string/int)** |Select dropdown by value/index  | void
+**GetSelected()** |Get selected dropdown value  | string
+
+[Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Common/DropDownTests.cs)
+
+```java 
+TBD
+```
+```csharp 
+[Test]
+public void SelectDropDownExample() 
+{
+    MyDropDown.Select("some value");
+}
+[Test]
+public void SelectByIndexExample() 
+{
+    MyDropDown.Select(1);
+}
+[Test]
+public void GetSelectedExample() 
+{
+    var selected = MyDropDown.GetSelected();
+    Assert.AreEqual(selected, "some value");
+}
+```
+
+### DataList
+**DataList** – a graphical control element, that allows the user to choose one value from a list or enter it by himself.
+
+Here is the list of some available methods:
+
+|Method | Description | Return Type
+--- | --- | ---
+**Select(string/int)** |Select datalist by value/index  | void
+**Input(string value)** |Input user's value into datalist  | void
+**GetSelected()** |Get selected datalist value  | string
+
+[Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Common/DataListTests.cs)
+
+```java 
+TBD
+```
+```csharp 
+[Test]
+public void SelectDataList() 
+{
+    MyDataList.Select("some value");
+}
+[Test]
+public void SelectByIndex() 
+{
+    MyDataList.Select(1);
+}
+[Test]
+public void FillDataList() 
+{
+    MyDataList.Input("some value");
+    SubmitButton.Click();
+}
+```
+
+### MultiSelector
+**MultiSelector** – a graphical control element, that allows the user to do multiple choice.
+
+Here is the list of some available methods:
+
+|Method | Description | Return Type
+--- | --- | ---
+**Select(string[]/int[])** |Select multiselector by values/indexes  | void
+**GetSelected(Array)** |Get selected values  | string[]
+**UnselectAll(Array)** |Unselect all values  | void
+
+[Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Common/MultiSelectorTests.cs)
+
+Examples in C#:
+
+```java 
+TBD
+```
+```csharp 
+[Test]
+public void MultiSelectByValues() 
+{
+    MyMultiSelector.Select(string[]);
+}
+[Test]
+public void MultiSelectByIndexes() 
+{
+    MyMultiSelector.Select(int[]);
+}
 ```
 ## Composite elements
 TBD
@@ -70,7 +173,8 @@ DismissAlert();
 ```
 
 alert('Alert')
-![Alert](/images/alert.png)
+
+![Alert](../images/alert.png)
 
 ```java 
 alertButton.click();
@@ -93,7 +197,8 @@ TBD ValidateAlert
 ```
 
 confirm()
-![Confirmation dialog](/images/confirm.png)
+
+![Confirmation dialog](../images/confirm.png)
 
 ```java 
 alertButton.click();
@@ -104,7 +209,8 @@ TBD InputAndAcceptAlert
 ```
 
 prompt('Alert', 'Default value')
-![Prompt dialog](/images/prompt.png)
+
+![Prompt dialog](../images/prompt.png)
 
 
 ## Logs
