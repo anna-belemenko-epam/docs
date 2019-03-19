@@ -14,7 +14,7 @@ Test Scenario
 3) Validate that HomePage id openned
 ```java 
 @Test
-public void fillContactFormTest() {
+public void loginTest() {
     homePage.open();
     userIcon.click();
     loginForm.loginAs(DEFAULT_USER);
@@ -40,7 +40,37 @@ But this is not all, just Run this test in your IDE and what you will get?
 Just move allure-results folder in target folder adn run maven > Plugins > allure > allure:serve
 ![Allure Serve](../images/intro/allure-serve.png)
 
-### 2. Organize PageObjects
+### 2. UI PageObjects
+So now let's look on PageObjects we have in JDI. In example above for "Login test" we have following PageObjects:
+* Site - entity for your application. Consist of list of Pages you have in application
+```java 
+@JSite("https://epam.github.io/JDI/")
+public class JdiTestSite {
+    public static HomePage homePage;
+}
+```
+* HomePage - Pages collects elements: common, complex and composite. Pages already have meta information about Url and Title and you can execute common actions with this Pages like: open, checkOpenned, get Url/Titile, zoom, scroll, work with cookies etc.
+```java 
+@Url("/index.html") @Title("Home Page")
+public class HomePage extends WebPage {
+    @Css("form") public static LoginForm loginForm;
+    @Css("img#user-icon") public static Icon userIcon;
+}
+```
+* LoginForm - Forms and Sections are logical parts of pages, they can include other sections or just elements. Forms also have additional actions like fill, submit, check etc.
+```java 
+public class LoginForm extends Form<User> {
+    @Css("#name") TextField userName;
+    @Css("#password")  TextField password;
+    @Css("[type=submit]") Button enter;
+}
+```
+* UI elements (Typified elements) like Button, TextField, Checkbox, Icon etc. - simple elements that represents real elements on UI
+
+
+
+This is common JDI project structure
+
 
 ## Start new project with JDI
 ## How to improve your Selenium project with new capabilities in few minutes
