@@ -8,6 +8,7 @@ TBD
 ## Complex elements
 ### Table
 [Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Complex/TableTests.cs)
+
 ```java 
 TBD
 ```
@@ -27,32 +28,26 @@ Here is the list of some available methods:
 
 [Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Common/DropDownTests.cs)
 
-Examples in C#:
+```java 
+TBD
+```
 ```csharp 
 [Test]
 public void SelectDropDownExample() 
 {
     MyDropDown.Select("some value");
 }
-```
-```csharp 
 [Test]
 public void SelectByIndexExample() 
 {
     MyDropDown.Select(1);
 }
-```
-```csharp 
 [Test]
 public void GetSelectedExample() 
 {
     var selected = MyDropDown.GetSelected();
     Assert.AreEqual(selected, "some value");
 }
-```
-Examples in Java:
-```java 
-TBD
 ```
 
 ### DataList
@@ -68,32 +63,26 @@ Here is the list of some available methods:
 
 [Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Common/DataListTests.cs)
 
-Examples in C#:
+```java 
+TBD
+```
 ```csharp 
 [Test]
 public void SelectDataList() 
 {
     MyDataList.Select("some value");
 }
-```
-```csharp 
 [Test]
 public void SelectByIndex() 
 {
     MyDataList.Select(1);
 }
-```
-```csharp 
 [Test]
 public void FillDataList() 
 {
     MyDataList.Input("some value");
     SubmitButton.Click();
 }
-```
-Examples in Java:
-```java 
-TBD
 ```
 
 ### MultiSelector
@@ -110,23 +99,21 @@ Here is the list of some available methods:
 [Test examples](https://github.com/jdi-testing/jdi-light-csharp/blob/master/JDI.Light/JDI.Light.Tests/Tests/Common/MultiSelectorTests.cs)
 
 Examples in C#:
+
+```java 
+TBD
+```
 ```csharp 
 [Test]
 public void MultiSelectByValues() 
 {
     MyMultiSelector.Select(string[]);
 }
-```
-```csharp 
 [Test]
 public void MultiSelectByIndexes() 
 {
     MyMultiSelector.Select(int[]);
 }
-```
-Examples in Java:
-```java 
-TBD
 ```
 
 ## Composite elements
